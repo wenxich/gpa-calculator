@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="gpacalc.js"></script>
+
+</head>
+
+<body>
+
+  <div id="box">
+  
+    <h1>GPA Calculator</h1>
+      <form action="#" id="gpaCalculator">
+      <p>
+      <div style="overflow-x:auto;">
+      <table cellpadding="5" cellspacing="0" border="1" align="center" background-color="yellow">
+      <tr>
+        <td><b>Class Name</b></td>
+        <td><b>GPA</b></td>
+        <td><b>Credits</b></td>
+      </tr>
+      <tr>
+        <td><input name="class1name"></td>
+        <td><input name="class1gpa"></td>
+        <td><input name="class1credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class2name"></td>
+        <td><input name="class2gpa"></td>
+        <td><input name="class2credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class3name"></td>
+        <td><input name="class3gpa"></td>
+        <td><input name="class3credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class4name"></td>
+        <td><input name="class4gpa"></td>
+        <td><input name="class4credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class5name"></td>
+        <td><input name="class5gpa"></td>
+        <td><input name="class5credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class6name"></td>
+        <td><input name="class6gpa"></td>
+        <td><input name="class6credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class7name"></td>
+        <td><input name="class7gpa"></td>
+        <td><input name="class7credits"></td>
+      </tr>
+      <tr>
+        <td><input name="class8name"></td>
+        <td><input name="class8gpa"></td>
+        <td><input name="class8credits"></td>
+      </tr>
+      </table>
+      </div>
+      <p>
+      <input type="button" name="button" value="Calculate" id="button" onclick="CalculateGPA([class1gpa.value, class2gpa.value, class3gpa.value, class4gpa.value, class5gpa.value, class6gpa.value, class7gpa.value, class8gpa.value], [class1credits.value, class2credits.value, class3credits.value, class4credits.value, class5credits.value, class6credits.value, class7credits.value, class8credits.value], 'result')" />
+      <p>
+      </form>
+  <h2>Calculated GPA: <output id="result"></output></h2>
+
+  </div>
+</body>
+</html>
