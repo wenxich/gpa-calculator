@@ -27,11 +27,11 @@ function CalculateGPA(classes, totalCredits, resultElementName) {
         sum += classes[i]*(totalCredits[i]/sumCredits);
       }
     }
-    
+
     var average = Math.round((sum + Number.EPSILON) * 100) / 100
      
     var resultElement = document.getElementById(resultElementName);
     
     resultElement.innerHTML = average;
 
-  }
+}
