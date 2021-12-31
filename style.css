@@ -129,3 +129,9 @@ h2 {
     cursor: pointer;
     transition: 0.3s;
     }
+
+@media only screen and (max-height: 705px) {
+    #box {
+        display: block;
+    }
+}
