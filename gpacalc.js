@@ -20,7 +20,7 @@ function CalculateGPA(classes, totalCredits, resultElementName) {
       }
     }
     
-    //update sum and count
+    //update sum
     for(let i = 0; i < classes.length; i++) {
       if(!classes[i].isNaN) {
         sum += classes[i]*(totalCredits[i]/sumCredits);
