@@ -1,5 +1,6 @@
 # Student Essentials
-Student essentials website for UPenn students created using HTML, CSS, and JavaScript.
+
+A student essentials website for UPenn students created using HTML, CSS, and JavaScript.
 
 Features a semester **GPA calculator** and a **to-do list** you can update and save (currently also working on a **Pomodoro timer**).
 
