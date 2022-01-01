@@ -2,106 +2,61 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPA Calculator</title>
+    <title>Student Essentials</title>
     <link rel="stylesheet" href="style.css">
-    <script src="gpacalc.js"></script>
+
+<style>
+
+#container {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+body {
+  font-size: 110%;
+}
+
+.button { /* stylizing links to look like buttons */
+    text-decoration: none;
+    margin-top:15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .button:hover {
+        color: #fff;
+        background-color: #000;
+    }
+
+hr {
+  border: 1px solid transparent;
+}
+
+</style>
 
 </head>
 
 <body>
 
     <div id="box">
-    
-        <h1>GPA Calculator</h1>
         
-        <button id="chartButton">UPenn's Letter Grade Conversion Chart</button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>
-                <table cellpadding="5" cellspacing="0" border="1" align="center">
-                <tr>
-                    <td>A+ = 4.0</td>
-                    <td>A = 4.0</td>
-                    <td>A- = 3.7</td>
-                </tr>
-                <tr>
-                    <td>B+ = 3.3</td>
-                    <td>B = 3.0</td>
-                    <td>B- = 2.7</td>
-                </tr>
-                <tr>
-                    <td>C+ = 2.3</td>
-                    <td>C = 2.0</td>
-                    <td>C- = 1.7</td>
-                </tr>
-                <tr>
-                    <td>D+ = 1.3</td>
-                    <td>D = 1.0</td>
-                    <td></td>
-                </tr>
-                </table>
-                </p>
-            </div>
+        <h1>Hello there! &#128075;</h1>
+        <div id="container">
+        Welcome to the one-stop-shop for UPenn student essentials!<p>
+        Featuring a semester <u>GPA calculator</u>, a <u>to-do list</u> you can update and save, and a <u>Pomodoro timer</u> (coming soon!)
+        <p><hr><p>
+        <a href="gpa.html" class="button">&#10133; GPA Calculator</a><hr>
+        <a href="todo.html" class="button">&#9999;&#65039; To-Do List</a>
+        <p><hr><p>
         </div>
-        <script src="conversionchart.js"></script>
-
-        <form action="#" id="gpaCalculator">
-        <p>
-        <div style="overflow-x:auto">
-            <table cellpadding="5" cellspacing="0" border="1" align="center">
-            <tr>
-                <td>Class Name</td>
-                <td>Grade</td>
-                <td>Credits</td>
-            </tr>
-            <tr>
-                <td><input name="class1name"></td>
-                <td><input name="class1gpa"></td>
-                <td><input name="class1credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class2name"></td>
-                <td><input name="class2gpa"></td>
-                <td><input name="class2credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class3name"></td>
-                <td><input name="class3gpa"></td>
-                <td><input name="class3credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class4name"></td>
-                <td><input name="class4gpa"></td>
-                <td><input name="class4credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class5name"></td>
-                <td><input name="class5gpa"></td>
-                <td><input name="class5credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class6name"></td>
-                <td><input name="class6gpa"></td>
-                <td><input name="class6credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class7name"></td>
-                <td><input name="class7gpa"></td>
-                <td><input name="class7credits"></td>
-            </tr>
-            <tr>
-                <td><input name="class8name"></td>
-                <td><input name="class8gpa"></td>
-                <td><input name="class8credits"></td>
-            </tr>
-            </table>
-        </div>
-        <p>
-        <input type="button" name="button" value="Calculate" id="calcbutton" onclick="CalculateGPA([class1gpa.value, class2gpa.value, class3gpa.value, class4gpa.value, class5gpa.value, class6gpa.value, class7gpa.value, class8gpa.value], [class1credits.value, class2credits.value, class3credits.value, class4credits.value, class5credits.value, class6credits.value, class7credits.value, class8credits.value], 'result')" />
-        </form>
-
-        <h2>Calculated GPA: <output id="result"></output></h2>
     
     </div>
     

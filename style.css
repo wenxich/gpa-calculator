@@ -15,6 +15,38 @@ input {
     font-family: 'Montserrat', sans-serif;
 }
 
+form {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+table, th, td {
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    font-size: 110%;
+}
+
+#box {
+    display: block;
+    width: 675px;
+    max-width: 80%;
+    max-height: 80%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 7px #5270a3;
+    letter-spacing: 1px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+}
+
+/*GPA CALC stuff*/
+
 #calcbutton { /* calculate button */
     border: 1px solid black;
     border-radius: 20px;
@@ -55,48 +87,11 @@ input {
         background-color: #000;
     }
 
-form {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-table, th, td {
-    border: 5px solid transparent;
-    border-collapse: collapse;
-    font-size: 110%;
-}
-
-h2 {
-  margin-top: -5px;
-}
-
-#box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 675px;
-    max-width: 80%;
-    max-height: 80%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 7px #5270a3;
-    letter-spacing: 1px;
-    background-color: white;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    overflow: scroll;
-}
-
-/* modal background */
-.modal {
+.modal { /* modal background */
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 25%; /* Location of the box */
+  padding-top: 30%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -130,8 +125,25 @@ h2 {
     transition: 0.3s;
     }
 
-@media only screen and (max-height: 705px) {
-    #box {
-        display: block;
+/*TO-DO stuff*/
+
+#todosave, #todoreload, #completedsave, #completedreload {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 7px 20px 7px 20px; /*top, right, bottom, left*/
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    #todosave:hover, #todoreload:hover, #completedsave:hover, #completedreload:hover {
+        color: #fff;
+        background-color: #000;
     }
+
+textarea {
+    font-family: 'Montserrat', sans-serif;
+    border-radius:5px;
 }
