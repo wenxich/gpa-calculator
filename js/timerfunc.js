@@ -1,6 +1,5 @@
 var timer;
 var myInterval;
-var isPaused;
 
 function startTimer(duration, minDisplay, secDisplay) {
     var minutes, seconds;
