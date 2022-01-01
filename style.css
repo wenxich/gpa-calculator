@@ -146,4 +146,5 @@ table, th, td {
 textarea {
     font-family: 'Montserrat', sans-serif;
     border-radius:5px;
+    max-width:85%;
 }
