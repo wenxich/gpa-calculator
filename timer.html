@@ -2,7 +2,7 @@
     <head>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GPA Calculator</title>
+        <title>Study Timer</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#10133;</text></svg>">
         <link rel="stylesheet" href="style.css">
         <script src="js/timerfunc.js"></script>
@@ -10,25 +10,36 @@
         <style>
 
         input[type="text"] { 
-            width: 20px; 
+            width: 25px; 
+        }
+        
+        hr {
+          border: 1px solid transparent;
         }
 
         </style>
 
     </head>
     <body>
-        <div id="timer">
+    <div id="box">
 
             <h1>Study Timer</h1>
-            <p><span id="min">25</span>:<span id="sec">00</span><p>
-            <button id="start">Start</button>
-            <button id="pause">Pause</button>
-            <button id="reset">Reset</button><p>
-            Set your own timer below (min : sec):<p>
-            <input type="text" maxlength="2" id="usermin"></input> : <input type="text" maxlength="2" id="usersec"></input>
-            <button id="userset">Set</button>
-
-        </div>
+            <p>
+            <div id="timer">
+                <span id="min">25</span> : <span id="sec">00</span>
+            </div>
+            <p>
+            <button class="timerbutton" id="start">Start</button>
+            <button class="timerbutton" id="pause">Pause</button>
+            <button class="timerbutton" id="reset">Reset</button><p>
+            <hr>
+            <p>
+            <div id="settimer">
+                Set your own timer (min : sec):<p>
+                <input type="text" maxlength="2" id="usermin"> : <input type="text" maxlength="2" id="usersec">
+                <p>
+                <button class="timerbutton" id="userset">Set</button>
+            </div>
         
         <script type="text/javascript">
 
@@ -49,7 +60,14 @@
             }, false);
 
             document.getElementById("reset").addEventListener("click", function () {
-                reset(1500, document.getElementById("min"), document.getElementById("sec"));
+                var usermin = Number(document.getElementById("usermin").value);
+                var usersec = Number(document.getElementById("usersec").value);
+                var userdur = (usermin*60)+usersec;
+                if(userdur == 0) {
+                  reset(1500, document.getElementById("min"), document.getElementById("sec"));
+                } else {
+                  reset(userdur, document.getElementById("min"), document.getElementById("sec"));
+                }
                 console.log("Reset timer");
             }, false);
 
@@ -62,5 +80,6 @@
             }, false);
 
         </script>
+        </div>
     </body>
 </html>
