@@ -1,6 +1,7 @@
-# GPA Calculator
-A simple GPA calculator for UPenn students created using HTML, CSS, and JavaScript.
+# Student Essentials
 
-Supports up to 8 classes, and includes a letter grade conversion chart.
+A student essentials website for UPenn students created using HTML, CSS, and JavaScript.
 
-You can view the calculator <a href="https://gpa.neocities.org">here</a>.
+Features a semester **GPA calculator** and a **to-do list** you can update and save (currently also working on a **Pomodoro timer**).
+
+You can view the site <a href="https://essentials.neocities.org">here</a>.
