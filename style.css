@@ -77,7 +77,7 @@ table, th, td {
     padding-bottom: 10px;
     cursor: pointer;
     transition: 0.3s;
-    max-width:50%;
+    max-width:70%;
     margin:0 auto;
     display:block;
 }
