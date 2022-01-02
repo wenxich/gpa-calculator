@@ -13,8 +13,8 @@
   margin-right: 60px;
 }
 
-body {
-  font-size: 110%;
+#box {
+  font-size: 135%;
 }
 
 .button { /* stylizing links to look like buttons */
@@ -23,7 +23,7 @@ body {
     text-decoration: none;
     margin-top:15px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 40px;
     color: #000;
     background-color: #fff;
     padding-left: 30px;
@@ -46,7 +46,13 @@ hr {
 @media only screen and (max-width: 650px) {
   /* For mobile phones: */
   #box {
-    font-size: 80%;
+    font-size: 110%;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  .button {
+    padding: 10px 15px 10px 15px;
   }
 }
 
@@ -61,12 +67,17 @@ hr {
         <h1>Hello there! &#128075;</h1>
         <div id="container">
         Welcome to the one-stop-shop for UPenn student essentials!<p>
-        Featuring a semester <u>GPA calculator</u>, a <u>to-do list</u> you can update and save, and a <u>Pomodoro timer</u> (coming soon!)
+        Featuring a semester <u>GPA calculator</u>, a <u>to-do list</u> you can update and save, and a <u>study timer</u> you can set.
         <p>
         <a href="gpa.html"><button class="button">&#10133; GPA Calculator</button></a>
-        <a href="todo.html"><button class="button">&#9999;&#65039; To-Do List</button></a><p>
+        <a href="todo.html"><button class="button">&#9999;&#65039; To-Do List</button></a>
+        <a href="timer.html"><button class="button">&#128218; Study Timer</button></a><p>
         </div>
     
+    </div>
+    
+    <div class="footer">
+        <p>Made with &#10084;&#65039; by <a href="https://wenxi.me">Wenxi Chen</a>
     </div>
     
 </body>

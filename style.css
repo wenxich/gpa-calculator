@@ -45,6 +45,24 @@ table, th, td {
     overflow: scroll;
 }
 
+.footer {
+    font-size: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color:#5270a3;
+    transition: 0.3s;
+}
+.footer a:hover {
+    color:black;
+}
+
 /*GPA CALC stuff*/
 
 #calcbutton { /* calculate button */
@@ -177,6 +195,6 @@ textarea {
     transition: 0.3s;
 }
     .timerbutton:hover {
-        color: #fff;
-        background-color: #000;
+    color: #fff;
+    background-color: #000;
     }
