@@ -65,6 +65,10 @@ table, th, td {
 
 /*GPA CALC stuff*/
 
+select {
+  font-family: 'Montserrat', sans-serif;
+}
+
 #calcbutton { /* calculate button */
     border: 1px solid black;
     border-radius: 20px;
