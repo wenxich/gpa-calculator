@@ -11,4 +11,4 @@ You can view the site <a href="https://essentials.neocities.org">here</a>.
 <b>Upcoming features:</b>
 <li><i>GPA Calculator:</i> Make letter grades an option in the table, so that users don't have to convert the grades themselves</li>
 <li><i>To-Do List:</i> Make a markdown preview feature</li>
-<li><i>Study TImer:</i> Make sound play when the timer ends, call the JS function faster
+<li><i>Study TImer:</i> Make sound play when the timer ends
